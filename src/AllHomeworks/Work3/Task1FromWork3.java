@@ -1,12 +1,10 @@
 package AllHomeworks.Work3;
-
 import AllHomeworks.Work2.Task1FromWork2;
 
 import java.util.Random;
 
 import static AllHomeworks.Work1.Task1FromWork1.sysInInt;
 import static AllHomeworks.Work2.Task1FromWork2.createArray;
-
 public class Task1FromWork3 {
     public static void main(String[] args) {
         Task1FromWork2 application = new Task1FromWork2();
@@ -14,7 +12,8 @@ public class Task1FromWork3 {
         int rndRangeMin = 0, rndRangeMax = 99;
         int[][] array = createAndFillTDA(length, rndRangeMin, rndRangeMax);
         printTwoDimensionalArray(array);
-        sumElementsRows(array, true);
+        Task1FromWork3 applicationsTk1Wk3 = new Task1FromWork3();
+        applicationsTk1Wk3.outSummRows(array.length, sumElementsRows(array));
     }
     public static int[][] createAndFillTDA(int length, int rndRangeMin, int rndRangeMax) {
         int[][] array = new int[length][length];
@@ -34,7 +33,7 @@ public class Task1FromWork3 {
             System.out.println();
         }
     }
-    public static int [] sumElementsRows(int [][] array, boolean flag) {
+    public static int [] sumElementsRows(int [][] array) {
         int summ = 0;
         int[] result = createArray(array.length);
         for(int i = 0; i < array.length; i++) {
@@ -44,11 +43,11 @@ public class Task1FromWork3 {
             result[i] = summ;
             summ = 0;
         }
-        if (flag) {
-            for (int i = 0; i < array.length; i++) {
-                System.out.printf("Сумма элементов %d-й строки: %d\n", i+1, result[i]);
-            }
-        }
         return result;
+    }
+    public void outSummRows(int length, int[] result) {
+        for (int i = 0; i < length; i++) {
+            System.out.printf("Сумма элементов %d-й строки: %d\n", i+1, result[i]);
+        }
     }
 }
