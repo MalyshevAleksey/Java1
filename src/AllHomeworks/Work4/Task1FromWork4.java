@@ -1,7 +1,5 @@
 package AllHomeworks.Work4;
 import java.util.Scanner;
-
-import static AllHomeworks.Work1.Task1FromWork1.sysInInt;
 public class Task1FromWork4 {
     public static void main(String args[]) {
         char [] charArray = sysInStrTypeArrayChar("Введите строчку: ");
