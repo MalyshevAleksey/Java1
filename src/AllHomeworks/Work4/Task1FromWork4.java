@@ -28,7 +28,7 @@ public class Task1FromWork4 {
                 }
                 flag = false;
             } else {
-                System.out.println("Введенное к-во выводимых символов больше длины слова");
+                System.out.println("Введенное к-во выводимых символов больше длины слова или меньше 1 символа.");
                 countOutSymbol = sysInInt("Введите число еще раз: ");
             }
         }
