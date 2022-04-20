@@ -4,7 +4,7 @@ public class Task3FromWork4 {
     public static void main(String args[]) {
         Task1FromWork4 applT1W4 = new Task1FromWork4();
         Task3FromWork4 applT3W4 = new Task3FromWork4();
-        char [] charArray = applT1W4.sysInStrTypeArrayChar("Введите строчку: ");
+        char [] charArray = applT1W4.sysInStrTypeArrayChar("Введите строку: ");
         char [] onlyNumber = applT3W4.arrayCharOnlyNumber(charArray);
         applT3W4.printCharArray(onlyNumber);
     }

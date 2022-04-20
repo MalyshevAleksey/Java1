@@ -4,7 +4,7 @@ public class Task5FromWork4 {
     public static void main(String[] args){
         Task1FromWork4 applT1W4 = new Task1FromWork4();
         Task5FromWork4 applT5W4 = new Task5FromWork4();
-        char [] charArray = applT1W4.sysInStrTypeArrayChar("Введите строчку: ");
+        char [] charArray = applT1W4.sysInStrTypeArrayChar("Введите строку: ");
         String result = applT5W4.uniqueSymbolsInStr(charArray);
         System.out.println(result);
     }
