@@ -10,7 +10,7 @@ public class Task1FromWork1 {
             System.out.println("Число счастливое!");
         }
         else {
-            System.out.println("Число несчастливое или не шестичзначное!");
+            System.out.println("Число несчастливое или не шестичзначное.");
         }
     }
     public boolean isLuckyNumber(int num) {

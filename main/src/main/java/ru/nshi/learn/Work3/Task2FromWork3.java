@@ -8,7 +8,7 @@ public class Task2FromWork3 {
         Task1FromWork1 applT1W1 = new Task1FromWork1();
         Task1FromWork3 applT1W3 = new Task1FromWork3();
         Task2FromWork3 applT2W3 = new Task2FromWork3();
-        int length = applT1W1.sysInInt("Введите количество строк и столбцов (одно число): ");
+        int length = applT1W1.sysInInt("Введите количество строк и столбцов (число): ");
         int rndRangeMin = 0, rndRangeMax = 99;
         int[][] array = applT1W3.createAndFillTDA(length, rndRangeMin, rndRangeMax);
         applT1W3.printTwoDimensionalArray(array);
