@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Task1FromWork4 {
     public static void main(String args[]) {
         Task1FromWork4 applT1W4 = new Task1FromWork4();
-        char [] charArray = applT1W4.sysInStrTypeArrayChar("Введите строчку: ");
+        char [] charArray = applT1W4.sysInStrTypeArrayChar("Введите строку: ");
         String out = "";
         for (int i = 0; i < charArray.length; i++) {
             out = applT1W4.sysOutChars(charArray, i);

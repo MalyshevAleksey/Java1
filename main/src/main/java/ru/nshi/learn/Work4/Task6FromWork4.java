@@ -10,7 +10,7 @@ public class Task6FromWork4 {
     }
     public String[] arrayWordsStr() {
         Scanner in = new Scanner(System.in);
-        System.out.print("Введите к-во слов: ");
+        System.out.print("Введите количество слов: ");
         int countWords = in.nextInt();
         String[] arrayWords = new String[countWords];
         for (int i = 0; i < countWords; i++){

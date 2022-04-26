@@ -3,7 +3,7 @@ package ru.nshi.learn.Work1;
 public class Task3FromWork1 {
     public static void main(String[] args) {
         Task1FromWork1 applT1W1 = new Task1FromWork1();
-        int num = applT1W1.sysInInt("Введите число ");
+        int num = applT1W1.sysInInt("Введите число: ");
         Task3FromWork1 applT3W1 = new Task3FromWork1();
         boolean flag = applT3W1.isPrimeNumber(num);
         if (flag) {
